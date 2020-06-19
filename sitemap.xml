@@ -2,22 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/post/hugo-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5/</loc>
-    <lastmod>2020-06-14T00:10:50+00:00</lastmod>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2020-06-19T13:04:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2020-06-14T21:37:09+08:00</lastmod>
+    <loc>http://localhost:1313/post/todo_list/</loc>
+    <lastmod>2020-06-19T13:04:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2020-06-14T21:37:09+08:00</lastmod>
+    <lastmod>2020-06-19T13:04:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/hugo-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5/</loc>
+    <lastmod>2020-06-14T00:10:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -38,7 +45,7 @@
   
   <url>
     <loc>http://localhost:1313/post/bad-smell/</loc>
-    <lastmod>2020-06-14T21:37:09+08:00</lastmod>
+    <lastmod>2020-06-14T21:51:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
