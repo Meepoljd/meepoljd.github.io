@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>身边的月光 · 婚礼沟通台 v0.1</title>
+<style>
+:root {
+  --bg:#f4f0e8; --panel:#fbf8f2; --ink:#29251f; --muted:#82796d;
+  --line:#d9cfc2; --gold:#b49364; --deep:#5b5145; --shadow:0 14px 45px rgba(70,55,35,.09);
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#eee8df,#f7f4ef 40%,#eee8df);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif}
+.shell{max-width:1380px;margin:auto;padding:34px 28px 56px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:24px}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--gold);font-weight:700}
+h1{font-family:Georgia,"Noto Serif SC",serif;font-weight:500;font-size:42px;margin:8px 0 4px}
+.sub{color:var(--muted);font-size:14px}
+.badge{border:1px solid var(--line);border-radius:999px;padding:9px 14px;background:rgba(255,255,255,.45);font-size:12px;color:var(--deep)}
+.hero{display:grid;grid-template-columns:1.65fr .7fr;gap:18px;margin-bottom:24px}
+.card{background:rgba(251,248,242,.9);border:1px solid rgba(190,174,153,.55);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.venue{position:relative;min-height:430px;background:#ddd}.venue img{width:100%;height:100%;object-fit:cover;display:block}
+.overlay{position:absolute;left:18px;bottom:18px;background:rgba(31,27,23,.68);color:white;border-radius:14px;padding:12px 15px;backdrop-filter:blur(8px)}
+.overlay b{display:block;font-family:Georgia,"Noto Serif SC",serif;font-size:18px;margin-bottom:3px}
+.logo-card{padding:18px;display:flex;flex-direction:column;gap:14px}.logo-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:15px;border:1px solid var(--line)}
+.logo-card h3{margin:0;font-family:Georgia,"Noto Serif SC",serif;font-size:22px}.logo-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.75}
+.section-title{display:flex;align-items:center;justify-content:space-between;margin:32px 2px 14px}.section-title h2{font-family:Georgia,"Noto Serif SC",serif;font-weight:500;margin:0;font-size:27px}
+.timeline{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:12px}
+.stage-btn{border:1px solid var(--line);background:rgba(255,255,255,.5);border-radius:15px;padding:12px 10px;cursor:pointer;text-align:left;transition:.2s}.stage-btn:hover{transform:translateY(-2px);background:#fff}.stage-btn.active{background:#302a23;color:white;border-color:#302a23}.stage-btn small{display:block;font-size:10px;letter-spacing:.12em;opacity:.65;margin-bottom:6px}.stage-btn strong{display:block;font-size:13px;line-height:1.35}.stage-btn span{display:block;font-size:10px;margin-top:7px;opacity:.65}
+.detail{display:grid;grid-template-columns:.85fr 1.35fr .85fr;gap:14px}.pane{padding:20px 22px;min-height:420px}.kicker{font-size:11px;letter-spacing:.15em;color:var(--gold);font-weight:700;margin-bottom:9px}.pane h3{font-family:Georgia,"Noto Serif SC",serif;font-size:26px;margin:0 0 18px;font-weight:500}
+.timegrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 18px}.timebox{padding:12px;background:#f1ebe2;border-radius:12px}.timebox small{display:block;color:var(--muted);font-size:10px;margin-bottom:4px}.timebox b{font-size:14px}.music{border-left:3px solid var(--gold);padding:11px 12px;background:#f5efe6;border-radius:0 10px 10px 0;line-height:1.6;font-size:13px}.status{display:inline-block;margin-top:9px;padding:5px 9px;border-radius:999px;background:#e8dfd2;color:#665b4e;font-size:10px}.script{white-space:pre-line;line-height:1.95;font-family:Georgia,"Noto Serif SC","Songti SC",serif;font-size:15px;color:#39332c}.cue{line-height:1.8;color:#5f564b;font-size:13px}.note{margin-top:18px;padding:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.75}footer{text-align:center;color:#8e8478;font-size:11px;margin-top:24px}
+@media(max-width:900px){.hero,.detail{grid-template-columns:1fr}.timeline{grid-template-columns:repeat(2,1fr)}.venue{min-height:300px}header{align-items:flex-start;flex-direction:column}h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header><div><div class="eyebrow">Wedding Communication Console</div><h1>身边的月光</h1><div class="sub">男方主提案 v0.1 · 秦皇国际三楼宴会厅 · 艾迪婚礼 · 女方意见冲突时以女方为主</div></div><div class="badge">当前为沟通原型 · 时间为相对仪式时间</div></header>
+<section class="hero"><div class="card venue"><img src="assets/venue.jpg" alt="当前主会场最大复用方案草图" /><div class="overlay"><b>主会场草图 · 最大复用思路</b><span>暖白 / 浅香槟硬景 + 月光缎闪 + 低密度花艺</span></div></div><aside class="card logo-card"><img src="assets/logo.jpg" alt="身边的月光 Logo 方向" /><div><div class="kicker">CURRENT LOGO</div><h3>C 是月，L 是人与影</h3><p>女方 C 化作月亮；男方以人物与影子共同形成 L。月光更明显，但避免硬射线与星空堆叠。</p></div></aside></section>
+<div class="section-title"><h2>仪式时间轴</h2><div class="sub">点击任一阶段查看串词、配乐与现场 Cue</div></div>
+<div class="timeline" id="timeline"></div>
+<section class="detail"><div class="card pane"><div class="kicker" id="metaNum"></div><h3 id="metaTitle"></h3><div class="timegrid"><div class="timebox"><small>预计开始</small><b id="metaStart"></b></div><div class="timebox"><small>持续时间</small><b id="metaDuration"></b></div><div class="timebox" style="grid-column:1/-1"><small>累计时间</small><b id="metaElapsed"></b></div></div><div class="kicker">MUSIC</div><div class="music" id="music"></div><div class="status" id="musicStatus"></div></div><div class="card pane"><div class="kicker">HOST SCRIPT</div><h3>主持人串词</h3><div class="script" id="script"></div></div><div class="card pane"><div class="kicker">STAGE CUE</div><h3>执行提示</h3><div class="cue" id="cue"></div><div class="note">当前原则：不设置新人誓言/问答；不设置男方父母仪式内容；电子蝴蝶仅用于送戒；新娘入场承担整场首次大高潮；结尾核心句为「仪式结束，生活继续。」</div></div></section>
+<footer>身边的月光 · Wedding working draft · 2026-08-25</footer></div>
+<script>
+const stages = [{"id":"waiting","num":"01","title":"宾客候场","start":"仪式前 20:00","duration":"20 min","elapsed":"-20:00 → 00:00","music":"现代钢琴 / Ambient 器乐（候选：坂本龙一、Ólafur Arnalds）","musicStatus":"暂定候选","script":"这一阶段不安排正式主持串词。让音乐和会场先建立“身边的月光”的气氛。主持人仅在需要时做极简就座提示。","cue":"珍珠暖白常亮；C 月亮保持低亮度；主题静帧；不提前制造高潮。"},{"id":"opening","num":"02","title":"主持开场","start":"00:00","duration":"1:20","elapsed":"00:00 → 01:20","music":"极薄环境音乐，压低音量","musicStatus":"待定具体曲目","script":"各位亲友，晚上好。\n\n他们给今天取了一个名字，叫做——身边的月光。\n\n月光其实很寻常。它不会因为今天是一场婚礼，才第一次出现；以后很多普通的晚上，它还是会照在窗边，照在回家的路上，也照进那些没有鲜花、没有掌声的日子。\n\n所以今晚并不想讲一个多么传奇的爱情故事。只是两个原本各自生活的人，决定从今天开始，把往后的日子放在一起。\n\n接下来，让我们先等一个人走到这里。","cue":"主持人站定后再开口；灯光基本不动；语速慢于日常但避免朗诵腔。"},{"id":"groom","num":"03","title":"新郎入场","start":"01:20","duration":"1:10","elapsed":"01:20 → 02:30","music":"Hans Zimmer — Cornfield Chase（克制段）","musicStatus":"暂定","script":"有请今天的新郎。\n\n今天站在这里，其实不需要回答太多问题。不用证明什么，也不用把以后几十年的生活，在今天晚上提前说完。\n\n只需要在这里，等一个人来到身边。\n\n接下来，请把目光转向宴会厅的另一端。","cue":"男方面光稳定；不进入强高潮；新郎到位后音乐压低。"},{"id":"bride","num":"04","title":"新娘入场 / 汇合","start":"02:30","duration":"2:40","elapsed":"02:30 → 05:10","music":"The Cinematic Orchestra — Arrival of the Birds","musicStatus":"重点候选","script":"有请今天的新娘。\n\n【新娘出现后，主持人停顿，让音乐和画面接管】\n\n有些重要的时刻，其实不需要太多语言。一个人从那里走来，另一个人在这里等着。然后，他们会走到一起。\n\n今天以后，他们仍然会是原来的自己。只是很多事情，会多一个人商量；很多路，会多一个人一起走；很多普通的晚上，也会多一个人待在身边。\n\n现在，请两位站到彼此身边。","cue":"整场第一次明显高潮。高潮点必须对齐“新娘完整出现/进入主通道”，而不是走到新郎身边。汇合后音乐收束。"},{"id":"ring","num":"05","title":"电子蝴蝶送戒 / 交换戒指","start":"05:10","duration":"3:10","elapsed":"05:10 → 08:20","music":"送戒：Dustin O’Halloran — We Move Lightly；交换戒指：Ólafur Arnalds — Near Light","musicStatus":"暂定候选","script":"不用说什么，也不用回答任何问题。就看看身边的这个人。\n\n今天不会让生活突然变得不同。明天还是要起床、工作、吃饭、回家。但从今天开始，那些原本属于一个人的普通日子，会慢慢变成两个人共同经历的生活。\n\n所以接下来，也不准备一段很长的誓言。有些事情，与其今天说完，不如留到以后慢慢去做。\n\n接下来，请迎接你们的戒指。\n\n【蝴蝶飞行时主持人停止讲话】\n\n戒指到了。请两位取下属于彼此的戒指。\n\n戒指很小。它不会替人解决生活里的问题，也不能保证以后所有的日子都顺利。它只是留下一件很简单的事：从今天开始，无论生活是什么样子，身边都有一个共同面对的人。\n\n现在，请为彼此戴上戒指。","cue":"C 月亮亮度上升；电子蝴蝶启动后主持人静音；不要用“破茧、蜕变、命中注定”等解释。"},{"id":"ending","num":"06","title":"收束 / 仪式结束","start":"08:20","duration":"1:40","elapsed":"08:20 → 10:00","music":"陈楚生《经过》剪辑版（建议从后半段更舒展的段落进入）","musicStatus":"重点候选","script":"今晚的月光还是从前的月光。\n\n以后，它也还会一天天出现。生活也是一样。会有忙的时候，会有轻松的时候；会有值得记住的日子，也会有更多没有什么特别的普通一天。\n\n而从今天开始，这些日子里，身边多了彼此。\n\n这就是今晚想留下的东西。\n\n身边的月光。\n\n【停顿】\n\n仪式结束，生活继续。","cue":"说完最后一句后主持人退开，不再宣布“礼成”。《经过》进入；月光 Logo 保持，灯光从仪式模式缓慢转为宴会模式。"},{"id":"banquet","num":"07","title":"回席 / 开宴","start":"10:00","duration":"2:00","elapsed":"10:00 → 12:00","music":"国语开宴曲待定；随后进入老港乐 + 少量薛之谦","musicStatus":"待定","script":"原则上不再做正式主持总结。可仅做一句功能性提示：\n\n“接下来，不再是仪式。大家好好吃饭，好好聊天，也好好享受今晚。”","cue":"新人回到宾客中；服务开始；音量提升但不要立即做强节奏舞曲。"}];
+const timeline=document.getElementById('timeline');
+function renderStage(stage){document.querySelectorAll('.stage-btn').forEach(b=>b.classList.toggle('active',b.dataset.id===stage.id));document.getElementById('metaNum').textContent='STAGE '+stage.num;document.getElementById('metaTitle').textContent=stage.title;document.getElementById('metaStart').textContent=stage.start;document.getElementById('metaDuration').textContent=stage.duration;document.getElementById('metaElapsed').textContent=stage.elapsed;document.getElementById('music').textContent=stage.music;document.getElementById('musicStatus').textContent=stage.musicStatus;document.getElementById('script').textContent=stage.script;document.getElementById('cue').textContent=stage.cue}
+stages.forEach((s,i)=>{const btn=document.createElement('button');btn.className='stage-btn'+(i===0?' active':'');btn.dataset.id=s.id;btn.innerHTML=`<small>${s.num} · ${s.duration}</small><strong>${s.title}</strong><span>${s.start}</span>`;btn.onclick=()=>renderStage(s);timeline.appendChild(btn)});renderStage(stages[0]);
+</script>
+</body>
+</html>
